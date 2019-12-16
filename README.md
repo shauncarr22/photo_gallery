@@ -1,2 +1,5 @@
-# photo_gallery
-Component to show multiple pictures and inspect item
+# Get started
+
+ - install webpack via npm
+ - run `webpack` or `webpack-cli`
+ - open `index.html`

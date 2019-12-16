@@ -1,0 +1,36 @@
+{
+  "name": "general_reacting",
+  "version": "1.0.0",
+  "description": "donuts, cats, react, and such",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d -w",
+    "compile": "webpack-dev-server -d",
+    "start": "nodemon server.js"
+  },
+  "author": "Salinas",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "mini-css-extract-plugin": "^0.8.0",
+    "react": "^16.8.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "node": "^13.3.0",
+    "nodemon": "^1.19.4",
+    "react-dom": "^16.12.0"
+  }
+}
