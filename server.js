@@ -19,7 +19,7 @@ app.get('/products', (req, res) => {
         }else{
             res.send(results);
         }
-    }, 2);//1 shoud be id for proxy
+    }, 9);//1 shoud be id for proxy
 })
 
 app.listen(port, () => console.log(`Listening on port ${port}!!!`))

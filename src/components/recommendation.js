@@ -6,14 +6,14 @@ function Recommendation (props){
         input[0] = Number(input[0])
         input[1] = Number(input[1])
         while (input[0] > 0){
-            starArray.push('./img/stars/star-24px.svg')
+            starArray.push('./img/stars/star-24px.png')
             input[0]--;
         } 
         if (input[1] > 0){
-            starArray.push('./img/stars/star_half-24px.svg')
+            starArray.push('./img/stars/star_half-24px.png')
         }
         while (starArray.length < 5){
-            starArray.push('./img/stars/star_border-24px.svg')
+            starArray.push('./img/stars/star_border-24px.png')
         }
 
     return(

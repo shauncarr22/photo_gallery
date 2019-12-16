@@ -6,7 +6,7 @@ function Top(props){
         <div>
             {props.products.map((products, index) => 
             <div key={index} className='top'>
-                <p>Item # {products.item}</p>
+                <p>Item # {products.item} | </p>
                 <p>Model # {products.model}</p>
             </div>    
             )}
