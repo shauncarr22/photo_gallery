@@ -1,6 +1,5 @@
 import React from 'react';
 import Axios from 'axios';
-
 class Window extends React.Component {
     constructor() {
         super()
@@ -9,28 +8,23 @@ class Window extends React.Component {
             window:''
         }
     }
-    
     componentDidMount(){
         this.getProducts()
     }
-
     getProducts(){
         Axios.get('http://localhost:3008/products')
         .then((response) => {
             this.setState({products: response.data})
-            this.state.products.map((products, index) => {
+            this.state.products.map((products) => {
                 this.setState({window: products.img1})
-
-            })    
+            })
     })};
-
     handleClick(src){
         this.setState({window: src})
     };
-        
         render(){
             return(
-          <div>
+          <div className="container_main">
             <div className='container'>
                 {this.state.products.map((products, index)=>
                     <div className='smalls' key={index}>
@@ -41,16 +35,13 @@ class Window extends React.Component {
                             <li className='pic' onClick={() => this.handleClick(products.img4)}><img src={products.img4} alt=''/></li>
                         </ul>
                     </div>
-                )} 
-
+                )}
                     <div className="big">
                         <img src={this.state.window} alt=''/>
                     </div>
-            </div>  
-          </div>  
-         )  
+            </div>
+          </div>
+         )
     }
 }
-
-
 export default Window

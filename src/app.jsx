@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(){
     super()
     this.state = {
-      products:[{id: 0,
+      products:[{id: "",
         pname: "",
         img1: "",
         img2: "",
@@ -20,7 +20,9 @@ class App extends React.Component {
         average: "",
         recommended: 0,
         item: 0,
-        model: 0}],
+        model: 0,
+        did: 0,
+      }]
     }
   }
   

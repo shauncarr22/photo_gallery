@@ -6,18 +6,18 @@ function Recommendation (props){
         input[0] = Number(input[0])
         input[1] = Number(input[1])
         while (input[0] > 0){
-            starArray.push('./img/stars/star-24px.png')
+            starArray.push('https://i.imgur.com/mPOC8QL.png')
             input[0]--;
         } 
         if (input[1] > 0){
-            starArray.push('./img/stars/star_half-24px.png')
+            starArray.push('https://i.imgur.com/gJui2a2.png')
         }
         while (starArray.length < 5){
-            starArray.push('./img/stars/star_border-24px.png')
+            starArray.push('http://i.imgur.com/LX6bVm1.png')
         }
 
     return(
-        <div>
+        <div className="triple_main">
 
                 <div className='triple'>
                     <div className='stacks'>
@@ -33,7 +33,7 @@ function Recommendation (props){
                     </div>
                         <hr className='lines'/>
                     <div className='stacks'>
-                        <img src='./img/q&a.png'/><p>Community Q&A</p><p className='clickable'>View Now</p>
+                        <img src='https://i.imgur.com/BbSz84X.png'/><p>Community Q&A</p><p className='clickable'>View Now</p>
                     </div>
                 </div>    
 
