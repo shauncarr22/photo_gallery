@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS dummys;
+
 CREATE DATABASE dummys;
 
 USE dummys;

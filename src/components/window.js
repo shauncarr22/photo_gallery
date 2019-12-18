@@ -1,32 +1,27 @@
 import React from 'react';
 import Axios from 'axios';
 class Window extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state={
             products:[],
             window:''
         }
     }
-    componentDidMount(){
-        this.getProducts()
+
+    componentWillReceiveProps(props){
+        this.setState({window: props.img1})
     }
-    getProducts(){
-        Axios.get('http://localhost:3008/products')
-        .then((response) => {
-            this.setState({products: response.data})
-            this.state.products.map((products) => {
-                this.setState({window: products.img1})
-            })
-    })};
+   
     handleClick(src){
         this.setState({window: src})
     };
         render(){
+           
             return(
           <div className="container_main">
             <div className='container'>
-                {this.state.products.map((products, index)=>
+                {this.props.products.map((products, index)=>
                     <div className='smalls' key={index}>
                         <ul className='pics'>
                             <li className='pic' onClick={() => this.handleClick(products.img1)}><img src={products.img1} alt=''/></li>
